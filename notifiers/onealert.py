@@ -9,7 +9,7 @@ class OneAlert:
         pass
 
     def summary(self, book_info):
-        return '{seller}/{book}/{cc}/{star}*/{comment}'.format(
+        return '{seller}/{book}/{cc}/{star}*/"{comment}"'.format(
             seller=book_info['seller_name'],
             book=book_info['book_name'],
             cc=book_info['comment_count'],

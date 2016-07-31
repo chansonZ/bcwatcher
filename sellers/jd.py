@@ -8,8 +8,8 @@ class JD():
         self.book_id = book_id
 
     def query(self):
-        # http://sclub.jd.com/productpage/p-11935272-s-3-t-3-p-0.html
-        url = 'http://sclub.jd.com/productpage/p-' + self.book_id + '-s-3-t-3-p-0.html'
+        # http://sclub.jd.com/productpage/p-11935272-s-5-t-3-p-0.html
+        url = 'http://sclub.jd.com/productpage/p-' + self.book_id + '-s-5-t-3-p-0.html'
         json = requests.get(url).json(encoding='gbk')
         return {
             'seller_name': self.name,
