@@ -6,7 +6,6 @@ class JD():
         self.name = 'jd'
         self.book_name = book_name
         self.book_id = book_id
-        self.comment_count = 0
 
     def query(self):
         # http://sclub.jd.com/productpage/p-11935272-s-3-t-3-p-0.html

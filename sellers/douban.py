@@ -7,7 +7,6 @@ class DouBan():
         self.name = 'douban'
         self.book_name = book_name
         self.book_id = book_id
-        self.comment_count = 0
 
     def query(self):
         # https://book.douban.com/subject/26802084/collections

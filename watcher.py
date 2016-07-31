@@ -69,7 +69,7 @@ def watch(books, notifiers, cc_map):
         if old_cc > 0 and new_cc > old_cc:
             notify(notifiers, book_info)
         else:
-            print(new_cc)
+            print(book_info['seller_name'] + ':' + str(new_cc))
 
 args = docopt(__doc__, version='Book Comments Watcher 0.1')
 books_json = json.loads(args['--books'])

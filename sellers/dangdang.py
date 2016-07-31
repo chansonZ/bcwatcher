@@ -7,7 +7,6 @@ class DangDang:
         self.name = 'dangdang'
         self.book_name = book_name
         self.book_id = book_id
-        self.comment_count = 0
 
     def query(self):
         # http://comm.dangdang.com/reviewlist/23965877-1-0-2-1

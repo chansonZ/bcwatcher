@@ -7,7 +7,6 @@ class ZCN():
         self.name = 'z.cn'
         self.book_name = book_name
         self.book_id = book_id
-        self.comment_count = 0
 
     def query(self):
         # https://www.amazon.cn/product-reviews/B01FX8YEKK/ref=cm_cr_dp_see_all_btm?ie=UTF8&showViewpoints=1&sortBy=recent
