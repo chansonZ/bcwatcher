@@ -27,5 +27,5 @@ python3 watcher.py \
 ```
 
 # 备注
-* 通知是用过[onealert](http://www.onealert.com/)发送的
+* 通知是通过[onealert](http://www.onealert.com/)发送的
 * 可以通过corn定期监控书评
