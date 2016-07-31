@@ -2,7 +2,7 @@
 监控书评的小工具
 
 # 功能
-监测书评，如果有新的评论则发送通知
+监控书评，如果有新的评论则发送通知
 
 # 环境
 * python(3.5+ & pip)
@@ -28,4 +28,4 @@ python3 watcher.py \
 
 # 备注
 * 通知是用过[onealert](http://www.onealert.com/)发送的
-* 可以通过corn定期监测书评
+* 可以通过corn定期监控书评
