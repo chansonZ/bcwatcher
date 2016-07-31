@@ -63,13 +63,15 @@ def notify(notifiers, book_info):
 def watch(books, notifiers, cc_map):
     for book in books:
         book_info = book.query()
+        seller_name = book_info['seller_name']
         new_cc = int(book_info['comment_count'])
         old_cc = cc_map.get(book.book_id, 0)
         cc_map[book.book_id] = new_cc
         if old_cc > 0 and new_cc > old_cc:
+            print(seller_name + ':' + str(new_cc) + '!')
             notify(notifiers, book_info)
         else:
-            print(book_info['seller_name'] + ':' + str(new_cc))
+            print(seller_name + ':' + str(new_cc))
 
 args = docopt(__doc__, version='Book Comments Watcher 0.1')
 books_json = json.loads(args['--books'])

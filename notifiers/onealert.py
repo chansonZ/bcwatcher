@@ -9,11 +9,12 @@ class OneAlert:
         pass
 
     def summary(self, book_info):
-        return '{seller}/{book}/{cc}/{star}*'.format(
+        return '{seller}/{book}/{cc}/{star}*/{comment}'.format(
             seller=book_info['seller_name'],
             book=book_info['book_name'],
             cc=book_info['comment_count'],
-            star=book_info['latest_star']
+            star=book_info['latest_star'],
+            comment=book_info['latest_comment']
         )
 
     def event_id(self, book_info):
@@ -31,9 +32,7 @@ class OneAlert:
             'eventId':  event_id,
             'eventType': 'trigger',
             'alarmName': summary,
-            'entityName': summary,
-            'priority': 1,
-            'alarmContent': book_info['latest_comment']
+            'priority': 1
         }
         # print(data)
         r = requests.post(api, json.dumps(data))
